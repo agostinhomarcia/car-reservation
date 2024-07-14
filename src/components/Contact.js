@@ -15,7 +15,7 @@ const Contact = () => {
         <strong>Telefone:</strong> (11) 1234-5678
       </p>
       <p>
-        <strong>Email:</strong> contato@carrental.com
+        <strong>Email:</strong> contato@drivenow.com
       </p>
       <h2>Formulário de Contato</h2>
       <form>
