@@ -5,7 +5,7 @@ const About = () => {
     <section className="about">
       <h1>Sobre Nós</h1>
       <p>
-        Bem-vindo à CarRental! Somos uma empresa dedicada a fornecer as melhores
+        Bem-vindo à DriveNow! Somos uma empresa dedicada a fornecer as melhores
         opções de aluguel de carros para você. Com uma ampla frota de veículos,
         oferecemos desde carros econômicos até luxuosos, todos mantidos em
         excelente estado para garantir sua satisfação e segurança.

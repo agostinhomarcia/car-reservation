@@ -1,5 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
+const carouselImages = [
+  { id: 1, image: 'https://images.unsplash.com/photo-1485463611174-f302f6a5c1c9?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: 2, image: 'https://images.unsplash.com/photo-1517026575980-3e1e2dedeab4?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: 3, image: 'https://images.unsplash.com/photo-1508974239320-0a029497e820?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: 4, image: 'https://images.unsplash.com/photo-1469285994282-454ceb49e63c?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: 5, image: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+  { id: 6, image: 'https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
+];
 
 const vehicles = [
   { id: 1, name: 'Carro 1', image: 'https://img.freepik.com/fotos-gratis/carro-desportivo-branco-que-esta-na-estrada-vista-dianteira-do-cupe_114579-4005.jpg?uid=R58516977&ga=GA1.1.172126281.1720828259&semt=ais_user', description: 'Descrição do carro 1...' },
@@ -14,7 +25,16 @@ const vehicles = [
 const VehicleList = () => {
   return (
     <section className="vehicle-list">
-      <h2>Veículos Disponíveis</h2>
+      <h2>Bem vindo a DriveNow</h2>
+      <div className="carousel-container">
+        <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
+          {carouselImages.map(image => (
+            <div key={image.id}>
+              <img src={image.image} alt={`carousel-${image.id}`} />
+            </div>
+          ))}
+        </Carousel>
+      </div>
       <div className="vehicle-cards">
         {vehicles.map(vehicle => (
           <div key={vehicle.id} className="vehicle-card">

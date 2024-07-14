@@ -19,7 +19,7 @@ const Confirmation = () => {
           <li>Datas: {formattedStartDate} - {formattedEndDate}</li>
           <li>Preço Total: ${reservationDetails.totalPrice}</li>
         </ul>
-        <p>Obrigado por reservar com a CarRental! Um e-mail de confirmação foi enviado para você.</p>
+        <p>Obrigado por reservar com a DriveNow! Um e-mail de confirmação foi enviado para você.</p>
         <a href="/" className="button">Voltar para a Página Inicial</a>
       </div>
     </section>

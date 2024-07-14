@@ -51,6 +51,7 @@ header nav ul li a:hover {
 main {
   flex: 1;
   padding: 20px;
+  padding-bottom: 60px;
 }
 
 .search-filters {
@@ -71,9 +72,29 @@ main {
 }
 
 .vehicle-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel-container img {
+  width: 800px;
+  height: auto;
+}
+
+.vehicle-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .vehicle-card {
@@ -195,7 +216,11 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
+  position: fixed;
+  bottom: 0; /* Alinha o footer à parte inferior da tela */
+  width: 98%;
+  height: 50px; /* Define uma altura fixa para o footer */
+  z-index: 1000;
 }
 
 .footer .social-links a {
@@ -300,6 +325,7 @@ main {
 .edit-form button[type="button"] {
   background-color: #aaa;
 }
+
 .about,
 .contact {
   max-width: 800px;
@@ -339,6 +365,44 @@ main {
 }
 
 .contact form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.payment {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment h1 {
+  margin-bottom: 20px;
+}
+
+.payment form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment form label {
+  margin-bottom: 5px;
+}
+
+.payment form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.payment form button {
   padding: 10px 20px;
   border: none;
   border-radius: 4px;

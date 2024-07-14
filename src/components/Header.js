@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header>
       <div className="logo">
-        <Link to="/">CarRental</Link>
+        <Link to="/"> DriveNow</Link>
       </div>
       <nav>
         <ul>
@@ -13,6 +13,7 @@ const Header = () => {
           <li><Link to="/about">Sobre</Link></li>
           <li><Link to="/contact">Contato</Link></li>
           <li><Link to="/reservations"> Reservas</Link></li>
+          <li><Link to="/payment">Pagamento</Link></li>
           <li><Link to="/login">Login</Link></li>
         </ul>
       </nav>

@@ -9,6 +9,7 @@ import ReservationList from './components/ReservationList';
 import Login from './components/Login';
 import About from './components/About';
 import Contact from './components/Contact';
+import Payment from './components/Payment';
 import './styles.css'
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/reservations" element={<ReservationList />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/payment" element={<Payment />} />
         </Routes>
       </main>
       <Footer />
