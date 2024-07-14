@@ -5,13 +5,13 @@
 <h1 align="center"></h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/agostinhomarcia/car-reservation?color=d910e0">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/agostinhomarcia/car-reservation?color=334598">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/agostinhomarcia/car-reservation?color=d910e0">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/agostinhomarcia/car-reservation?color=334598">
 
-  <img alt="License" src="https://img.shields.io/github/license/agostinhomarcia/car-reservation?color=d910e0">
+  <img alt="License" src="https://img.shields.io/github/license/agostinhomarcia/car-reservation?color=334598">
 
-   <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/car-reservation?color=d910e0" />
+   <img alt="Github issues" src="https://img.shields.io/github/issues/agostinhomarcia/car-reservation?color=334598" />
 >
 
 </p>
@@ -100,6 +100,9 @@ car-reservation/
 │   │   ├── Confirmation.js
 │   │   ├── ReservationList.js
 │   │   ├── Login.js
+│   │   ├── Payment.js
+│   │   ├── About.js
+│   │   ├── Contact.js
 │   ├── App.js
 │   ├── index.js
 │   ├── styles.css
