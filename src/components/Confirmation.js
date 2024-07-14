@@ -4,7 +4,6 @@ import { format } from 'date-fns';
 const Confirmation = () => {
   const reservationDetails = JSON.parse(localStorage.getItem("reservationDetails"));
 
-  // Formatar as datas para uma melhor exibição
   const formattedStartDate = format(new Date(reservationDetails.startDate), 'dd/MM/yyyy');
   const formattedEndDate = format(new Date(reservationDetails.endDate), 'dd/MM/yyyy');
 
