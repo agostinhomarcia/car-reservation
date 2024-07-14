@@ -35,7 +35,8 @@ const ReservationList = () => {
 
   const handleSave = async () => {
     try {
-      await axios.put(`http://localhost:3000/reservations/${editReservationId}`, editedReservation);
+      const totalPrice = calculateTotalPrice(editedReservation.startDate, editedReservation.endDate, editedReservation.pricePerDay);
+      await axios.put(`http://localhost:3000/reservations/${editReservationId}`, { ...editedReservation, totalPrice });
       setEditReservationId(null);
       setEditedReservation({});
       fetchReservations();
@@ -47,6 +48,13 @@ const ReservationList = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setEditedReservation((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const calculateTotalPrice = (startDate, endDate, pricePerDay) => {
+    const start = new Date(startDate);
+    const end = new Date(endDate);
+    const days = Math.ceil((end - start) / (1000 * 60 * 60 * 24));
+    return days * pricePerDay;
   };
 
   return (
