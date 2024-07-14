@@ -85,8 +85,8 @@ const ReservationList = () => {
                 </td>
                 <td>${reservation.totalPrice}</td>
                 <td>
-                  <button onClick={() => handleEdit(reservation)}>Editar</button>
-                  <button onClick={() => handleDelete(reservation.id)}>Excluir</button>
+                  <button onClick={() => handleEdit(reservation)} className='button'>Editar</button>
+                  <button onClick={() => handleDelete(reservation.id)} className='button'>Excluir</button>
                 </td>
               </tr>
             ))}

@@ -7,7 +7,9 @@ import VehicleDetails from './components/VehicleDetails';
 import Confirmation from './components/Confirmation';
 import ReservationList from './components/ReservationList';
 import Login from './components/Login';
-import './styles.css';
+import About from './components/About';
+import Contact from './components/Contact';
+import './styles.css'
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/login" element={<Login />} />
           <Route path="/reservations" element={<ReservationList />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />

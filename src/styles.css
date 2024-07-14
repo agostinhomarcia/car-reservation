@@ -1,6 +1,6 @@
-/* Estilos gerais */
 body {
   font-family: Arial, sans-serif;
+  background-color: #eee;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -239,9 +239,9 @@ main {
   text-decoration: none;
   display: inline-block;
   margin-top: 10px;
+  cursor: pointer;
 }
 
-/* Estilos para a lista de reservas e formulário de edição */
 .reservation-list {
   margin: 20px;
 }
@@ -299,4 +299,50 @@ main {
 
 .edit-form button[type="button"] {
   background-color: #aaa;
+}
+.about,
+.contact {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about h1,
+.contact h1 {
+  margin-bottom: 20px;
+}
+
+.about p,
+.contact p {
+  margin-bottom: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact form label {
+  margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }

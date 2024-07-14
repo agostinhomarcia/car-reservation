@@ -64,7 +64,7 @@ const vehicles = {
       "https://img.freepik.com/fotos-gratis/corridas-de-automoveis-em-competicoes-esportivas_23-2150799985.jpg?uid=R58516977&ga=GA1.1.172126281.1720828259&semt=ais_user"
     ],
     specs: [
-      "Modelo: Caminhão",
+      "Modelo: Esportivo",
       "Ano: 2018",
       "Combustível: Gasolina",
       "Transmissão: Automática",
