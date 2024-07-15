@@ -29,6 +29,16 @@
 
 <br>
 
+<p align="center">
+  <img src="/public/intro.gif" alt="drivenow" />
+  
+</p>
+
+<p align="center">
+  <img src="/public/reserve.gif" alt="drivenow" />
+  
+</p>
+
 # Car Reservation Frontend
 
 Este é o frontend para o sistema de reservas de carros. Este projeto fornece uma interface de usuário para visualizar, criar, editar e deletar reservas de carros.
