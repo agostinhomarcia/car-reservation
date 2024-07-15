@@ -109,3 +109,17 @@ car-reservation/
 ├── package.json
 └── README.md
 ```
+
+## :memo: License
+
+This project is under the [MIT license](./License).
+
+Made with love by [Márcia Agostinho](https://github.com/agostinhomarcia) 🚀.
+
+<p align="center">
+   <img src="https://media.giphy.com/media/ifM99v5HzxZNlUyJEb/giphy.gif?cid=790b761152i9hs135j1u525e4123yjidop5h8bs94kkqgiqj&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="movies" width="230"/>
+</p>
+
+&#xa0;
+
+<a href="#top">Back to top </a>
