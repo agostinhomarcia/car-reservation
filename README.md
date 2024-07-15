@@ -41,7 +41,7 @@
 
 # Car Reservation Frontend
 
-Este é o frontend para o sistema de reservas de carros. Este projeto fornece uma interface de usuário para visualizar, criar, editar e deletar reservas de carros.
+Este é um webSite de reservas de carros. Este projeto fornece uma interface de usuário para visualizar, criar, editar e deletar reservas de carros.
 
 ## Tecnologias
 
