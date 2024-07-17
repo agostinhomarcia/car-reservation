@@ -1,0 +1,38 @@
+.payment {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.payment h1 {
+  margin-bottom: 20px;
+}
+
+.payment form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payment form label {
+  margin-bottom: 5px;
+}
+
+.payment form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.payment form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}

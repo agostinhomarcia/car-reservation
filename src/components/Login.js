@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Login.css'
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -11,7 +12,7 @@ const Login = () => {
   };
 
   return (
-    <section className="login">
+    <section className="login container">
       <h1>Login</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="username">Usuário:</label>
