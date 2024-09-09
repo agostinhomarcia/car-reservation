@@ -12,7 +12,7 @@ const ReservationList = () => {
 
   const fetchReservations = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/reservations');
+      const response = await axios.get('https://back-end-car-reservations.vercel.app/reservations');
       setReservations(response.data);
     } catch (error) {
       console.error('Erro ao buscar reservas:', error);
@@ -26,7 +26,7 @@ const ReservationList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/reservations/${id}`);
+      await axios.delete(`https://back-end-car-reservations.vercel.app/reservations/${id}`);
       fetchReservations();
     } catch (error) {
       console.error('Erro ao deletar reserva:', error);
@@ -36,7 +36,7 @@ const ReservationList = () => {
   const handleSave = async () => {
     try {
       const totalPrice = calculateTotalPrice(editedReservation.startDate, editedReservation.endDate, editedReservation.pricePerDay);
-      await axios.put(`http://localhost:3000/reservations/${editReservationId}`, { ...editedReservation, totalPrice });
+      await axios.put(`https://back-end-car-reservations.vercel.app/reservations/${editReservationId}`, { ...editedReservation, totalPrice });
       setEditReservationId(null);
       setEditedReservation({});
       fetchReservations();

@@ -210,12 +210,13 @@ const VehicleDetails = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:3000/reservations', reservationDetails);
+      const response = await axios.post('https://back-end-car-reservations.vercel.app/reservations', reservationDetails);
       console.log('Reserva criada:', response.data);
       localStorage.setItem("reservationDetails", JSON.stringify(reservationDetails));
       window.location.href = "/confirmation";
     } catch (error) {
       console.error('Erro ao criar a reserva:', error);
+      alert('Erro ao criar a reserva. Tente novamente.');
     }
   };
 
