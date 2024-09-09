@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,14 +8,11 @@ const Footer = () => {
       <div className="footer-content">
         <p>© 2024 DriveNow. Todos os direitos reservados.</p>
         <div className="social-links">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-            <FaFacebookF />
+          <a href="https://www.linkedin.com/in/marcia-agostinho-developer/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <FaInstagram />
-          </a>
-          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-            <FaTwitter />
+          <a href="https://github.com/agostinhomarcia" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
           </a>
         </div>
       </div>
