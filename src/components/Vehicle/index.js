@@ -254,7 +254,7 @@ const VehicleDetails = () => {
             minDate={new Date()}
             dateFormat="yyyy-MM-dd"
           />
-          <button className='button' type="submit">Reservar</button>
+          <button className='button-reservation' type="submit">Reservar</button>
         </form>
         <div className="reviews">
           <h2>Avaliações</h2>

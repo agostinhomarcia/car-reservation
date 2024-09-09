@@ -1,0 +1,125 @@
+/* Estilo geral da seção de confirmação */
+.reservation-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.confirmation-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-details h2 {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.confirmation-details ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.confirmation-details ul li {
+  padding: 8px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.confirmation-details p {
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Botão de voltar */
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* Estilo responsivo para telas menores */
+@media (max-width: 768px) {
+  .reservation-confirmation {
+    padding: 15px;
+  }
+
+  .confirmation-details {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .confirmation-details h2 {
+    font-size: 20px;
+  }
+
+  .confirmation-details ul li {
+    font-size: 15px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .reservation-confirmation {
+    padding: 10px;
+  }
+
+  .confirmation-details {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .confirmation-details h2 {
+    font-size: 18px;
+  }
+
+  .confirmation-details ul li {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

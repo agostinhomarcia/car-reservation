@@ -1,0 +1,98 @@
+/* Estilo geral do login */
+.login {
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Definido um max-width para telas grandes */
+  text-align: center;
+  margin-top: 50px;
+  box-sizing: border-box;
+}
+
+.login h1 {
+  margin-bottom: 20px;
+  font-size: 28px; /* Aumentado para mais destaque */
+  color: #333;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Adiciona espaçamento entre os campos */
+}
+
+.login label {
+  font-size: 14px;
+  color: #666;
+  text-align: left;
+  width: 100%; /* O label fica alinhado à esquerda */
+}
+
+.login input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login button {
+  padding: 12px 0;
+  width: 100%; /* O botão ocupa 100% da largura disponível */
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login button:hover {
+  background-color: #555;
+  transform: translateY(-2px); /* Animação de elevação ao hover */
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  .login {
+    padding: 30px 15px;
+    margin-top: 30px;
+  }
+
+  .login h1 {
+    font-size: 24px; /* Reduzido para telas menores */
+  }
+
+  .login input {
+    font-size: 15px;
+  }
+
+  .login button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login {
+    padding: 20px 10px;
+  }
+
+  .login h1 {
+    font-size: 22px; /* Reduzido para telas muito pequenas */
+  }
+
+  .login input {
+    font-size: 14px;
+  }
+
+  .login button {
+    font-size: 14px;
+  }
+}

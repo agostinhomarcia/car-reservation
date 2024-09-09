@@ -1,5 +1,6 @@
 import React from 'react';
 import { format } from 'date-fns';
+import './Confirmation.css';
 
 const Confirmation = () => {
   const reservationDetails = JSON.parse(localStorage.getItem("reservationDetails"));
