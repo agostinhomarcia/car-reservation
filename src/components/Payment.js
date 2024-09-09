@@ -12,7 +12,6 @@ const Payment = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Simula a lógica de pagamento conforme a necessidade do cliente
     console.log('Payment Details:', { cardNumber, expiryDate, cvv, name });
     navigate('/confirmation');
   };

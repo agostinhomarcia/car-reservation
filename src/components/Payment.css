@@ -36,3 +36,24 @@
   color: white;
   cursor: pointer;
 }
+/* Responsividade */
+@media (max-width: 768px) {
+  .vehicle-details {
+    flex-direction: column;
+  }
+
+  .vehicle-gallery {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-info ul li,
+  .review p {
+    font-size: 13px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}

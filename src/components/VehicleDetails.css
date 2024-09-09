@@ -1,27 +1,40 @@
+/* Estilo principal da seção de detalhes do veículo */
 .vehicle-details {
   display: flex;
   flex-direction: row;
   gap: 20px;
   margin-top: 20px;
   padding: 20px;
+  justify-content: space-between;
+  align-items: flex-start; /* Alinha os itens no topo */
 }
 
+/* Estilo para a seção de informações do veículo */
 .vehicle-info {
   background-color: #f5f5f5;
   padding: 20px;
   border-radius: 8px;
   flex: 2;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 600px; /* Limita a largura máxima para melhorar o layout */
+}
+
+.vehicle-info:hover {
+  transform: scale(1.02);
 }
 
 .vehicle-info h1 {
   margin-bottom: 10px;
   color: #333;
+  font-size: 24px; /* Aumentei um pouco o título */
 }
 
 .vehicle-info h2 {
   margin-bottom: 10px;
   color: #666;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 .vehicle-info ul {
@@ -35,56 +48,66 @@
   color: #555;
 }
 
+/* Estilo para o formulário de reserva */
 .vehicle-info form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 10px; /* Reduzi o gap entre os elementos do formulário */
   margin-top: 20px;
 }
 
 .vehicle-info label {
   font-size: 14px;
   color: #333;
+  font-weight: bold;
 }
 
-.vehicle-info input {
-  padding: 10px;
+.vehicle-info input,
+.vehicle-info .react-datepicker-wrapper {
+  padding: 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 14px;
-  width: calc(100% - 20px);
+  width: 100%; /* Corrige o tamanho do input para caber na área */
+  box-sizing: border-box; /* Garante que padding seja contabilizado no tamanho total */
+  max-width: 100%; /* Garante que o input não ultrapasse a área visível */
 }
 
+/* Botão de reserva */
 .button {
-  padding: 10px;
+  padding: 12px;
   border: none;
   border-radius: 5px;
   background-color: #333;
   color: white;
   font-size: 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
   background-color: #555;
+  transform: translateY(-2px);
 }
 
+/* Estilo da seção de avaliações */
 .reviews {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .reviews h2 {
   margin-bottom: 10px;
   color: #666;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 .review {
   background-color: #fff;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
 }
 
 .review .reviewer {
@@ -94,6 +117,7 @@
 
 .review .rating {
   color: #ffa500;
+  margin: 5px 0;
 }
 
 .review p {
@@ -102,16 +126,17 @@
   color: #555;
 }
 
+/* Galeria de imagens */
 .vehicle-gallery {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #fff;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .vehicle-gallery img {
@@ -120,4 +145,35 @@
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.vehicle-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+  .vehicle-details {
+    flex-direction: column;
+  }
+
+  .vehicle-gallery {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .vehicle-info ul li,
+  .review p {
+    font-size: 13px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .vehicle-info input {
+    font-size: 13px; /* Ajusta o tamanho do texto do input para telas menores */
+  }
 }
