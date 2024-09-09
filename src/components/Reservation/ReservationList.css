@@ -1,8 +1,7 @@
-/* Container da lista de reservas */
 .reservation-list {
   padding: 20px;
   margin: 0 auto;
-  max-width: 900px; /* Reduzido para melhorar o foco em desktops */
+  max-width: 900px;
   background-color: #f0f0f0;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -23,7 +22,7 @@ table {
 }
 
 thead {
-  background-color: #4caf50; /* Cor de destaque mais suave */
+  background-color: #4caf50;
   color: white;
 }
 
@@ -62,7 +61,6 @@ td {
   background-color: #555;
 }
 
-/* Responsividade para telas menores */
 @media (max-width: 768px) {
   table,
   thead,
@@ -74,7 +72,7 @@ td {
   }
 
   thead {
-    display: none; /* Cabeçalho da tabela escondido em telas pequenas */
+    display: none;
   }
 
   tr {
@@ -138,7 +136,7 @@ td {
 
 .edit-form button {
   padding: 12px;
-  background-color: #333;
+  background-color: #007bff !important;
   color: white;
   border: none;
   border-radius: 5px;
@@ -148,7 +146,7 @@ td {
 }
 
 .edit-form button:hover {
-  background-color: #555;
+  background-color: #0056b3 !important;
 }
 
 /* Ajustes para telas menores */
